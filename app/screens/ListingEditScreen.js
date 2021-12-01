@@ -92,14 +92,14 @@ const ListingEditScreen = () => {
         }}
         onSubmit={(values, actions) => {
           console.log(values);
-          // actions.resetForm({
-          //   values: {
-          //     title: "",
-          //     price: "",
-          //     category: "",
-          //     description: "",
-          //   },
-          // });
+          actions.resetForm({
+            values: {
+              title: "",
+              price: "",
+              category: "",
+              description: "",
+            },
+          });
         }}
         validationSchema={validationSchema}
       >
